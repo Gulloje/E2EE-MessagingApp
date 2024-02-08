@@ -1,0 +1,291 @@
+html {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #4c535d;
+    margin: 0px;
+}
+
+.row{
+    margin-left: 12%;
+}
+/*https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inputLabel{
+    color: white;
+    font-size: 26px;
+    margin: 1%;
+}
+
+.valueInputs{
+    border-radius: 10px;
+    width: 550px;
+    height: 40px;
+    border: none;
+    margin: 1%;
+}
+
+.rectangle {
+    height: 700px;
+    width: 550px;
+    margin-left: 4px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 2%;
+    padding: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+
+/*Source: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: lightgrey;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: grey;
+}
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    bottom: 5px;
+    position: sticky;
+}
+.messageInput {
+    border-radius: 5px;
+    border-color: lightgrey;
+    width: 95%;
+    height: 130%
+}
+
+.sendButton {
+    border-radius: 5px;
+    width: 20%;
+    margin-left: 5px;
+    color: white;
+    background-color: #58713f;
+    border: none;
+    height: 150%;
+    font-size: 14pt;
+}
+.sendButton:hover {
+    background-color: #3e8e41
+}
+
+.keyExchangeButton {
+    border-radius: 5px;
+    width: 20%;
+    margin-left: 10px;
+    margin-bottom: 1.25%;
+
+    color: white;
+    background-color: #58713f;
+    border: none;
+    height: 40px;
+    width: 545px;
+    font-size: 14pt;
+}
+
+.keyExchangeButton:hover {
+    background-color: #3e8e41
+}
+
+
+/*source:https://codepen.io/run-time/pen/VNRBJd */
+.bubbleLeft {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    color: white;
+    background-color: #4c535d;
+    margin-top: 1%;
+    margin-left: 3%;
+    align-self: flex-start;
+   
+}
+
+.bubbleRight {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    color: white;
+    background-color: #58713f;
+    margin-top: 1%;
+    margin-left: 30%;
+    align-self: flex-end;
+    
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+    border-left-color: #4c535d;
+    border-top-color: #4c535d;
+    
+}
+
+.bubble-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 275px;
+    bottom: -24px;
+    border-left-color: #58713f;
+    border-top-color: #58713f;
+    transform: rotate(90deg);
+}
+
+.bubble-header-left{
+    position: relative;
+    margin-top: 6%;
+    margin-left: 3%;
+    font-size: 12px;
+}
+
+.bubble-header-right{
+    position: relative;
+    margin-top: 6%;
+    margin-left: 30%;
+    font-size: 12px;
+}
+
+.navbar {
+    /*Source: https://stackoverflow.com/questions/65380538/adding-an-image-to-a-navbar-using-html-and-css*/
+    background-color: #58713f;
+    display: flex;
+    height: 80px;
+    margin-bottom: 1%;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+#navbar-img{
+    position: absolute;
+    margin-top: .4%;
+    margin-left: 12%;
+    height: 6.5%;
+}
+
+#navbar-txt{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    text-align: left;
+    margin-left: 16%;
+    font-size: 320%;
+    margin-top: .5%;
+}
+
+#username{
+    margin-bottom: 2%;
+}
+
+#encryptionMethods{
+    margin-bottom: 6.5%;
+}
+
+/*list*/
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+
+ul li {
+    padding-left: 0.5em;
+}
+
+ul.alt {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5%;
+}
+
+ul.alt li {
+    margin-bottom: 0%;
+}
+
+
+    
+
+
+
+
+
+
+

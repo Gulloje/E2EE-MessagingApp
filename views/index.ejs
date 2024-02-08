@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Muninn Messaging</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="site.css" type="text/css" />
+
+		<noscript><link rel="stylesheet" href="../public/site.css" /></noscript>
+
+        <div class="navbar">
+            <h1 id="navbar-txt">Muninn</h1>
+            <img id="navbar-img" src="/images/MuninLogo.png"/>
+        </div>
+	</head>
+	<body>
+		
+        <div class="text-center">
+   
+            <div class="row">
+                <div class="column" id="leftColumn">
+                    <label class="inputLabel" for="username">Username:</label><br />
+                    <input class="valueInputs" type="text" id="username"><br />
+                    <label class="inputLabel" for="key">Key:</label><br />
+                    <input class="valueInputs" type="text" id="key"><br />
+               
+                    <div class="rectangle">
+                        <ul class = "alt" id="cleartextList">
+                            
+                        </ul>
+                        <div class="inputContainer">
+                            <input class="messageInput" placeholder="Enter Message..." type="text" for="msgtxt" id="msgtxt">
+                            <button class="sendButton" id="sendButton">Send</button>
+                        </div>
+                         
+                    </div> 
+                </div>
+                
+                
+                <div class="column" id="rightColumn">
+                    
+                    <label class="inputLabel" for="encryptionMethods">Choose Encrpytion Method:</label><br />
+                    <Select class="valueInputs" id="encryptionMethods">
+                        <option value="Plaintext">Plain Text</option>
+                        <option value="AES256">AES256</option>
+                        <option value="3DES">3DES</option>
+                        <option value="DES">DES</option>
+                        <option value="Rabbit">Rabbit</option>
+                        <option value="RC4">RC4</option>
+                    </Select>
+                    
+                    <button class="keyExchangeButton" id="btnDHExchange">Key Exchange</button>
+                   
+                    
+                    
+                    <div class="rectangle">
+                        <ul class = "alt" id="ciphertextList">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/eventListeners.js"></script>
+	
+</html>
+	
